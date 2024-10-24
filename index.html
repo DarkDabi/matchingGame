@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Match Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <div id="login-screen">
+      <h1>Welcome to the Match Game!</h1>
+      <p>Enter your name to start. Your data will not be saved.</p>
+      <input type="text" id="username" placeholder="Enter your name">
+      <button id="start-game">Start Game</button>
+    </div>
+
+    <div id="game-screen" style="display: none;">
+      <h2>Playing against: <span id="opponent-name">Searching...</span></h2>
+      <p>Choose a symbol:</p>
+
+      <!-- Scoreboard -->
+      <div id="scoreboard">
+        <p>Your Score: <span id="player-score">0</span></p>
+        <p>Opponent's Score: <span id="opponent-score">0</span></p>
+      </div>
+
+      <div id="icons">
+        <button class="icon" id="icon1">🔴</button>
+        <button class="icon" id="icon2">🔷</button>
+        <button class="icon" id="icon3">⭐</button>
+        <button class="icon" id="icon4">❤️</button>
+      </div>
+
+      <p id="waiting-message" style="display: none;">Waiting for your opponent...</p>
+      <p id="result-message" style="display: none;"></p>
+      <button id="reset-game" style="display: none;">Reset</button>
+    </div>
+
+    <div id="timer" style="display: none;">
+      <p>Time remaining: <span id="time-left"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

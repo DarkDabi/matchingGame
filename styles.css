@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+  
+  #app {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  #icons {
+    margin-top: 20px;
+  }
+  
+  .icon {
+    font-size: 50px;
+    margin: 10px;
+    padding: 20px;
+    cursor: pointer;
+  }
+  
+  #timer {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  #scoreboard {
+    margin: 20px 0;
+    font-size: 18px;
+  }
+  
+  #scoreboard p {
+    margin: 5px;
+  }
+  
